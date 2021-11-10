@@ -1,0 +1,18 @@
+---
+
+- name: Install packages
+  package:
+    state: present
+    name:
+      - mc
+      - htop
+      - vim
+      - nano
+      - neofetch
+      - git
+      - tig
+
+- name: Uninstall packages
+  package:
+    state: absent
+    name: []
