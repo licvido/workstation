@@ -1,0 +1,7 @@
+---
+
+- name: Install additional software
+  package:
+    state: present
+    name:
+      - flameshot
