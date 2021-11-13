@@ -13,3 +13,8 @@
     dest: /home/fmi/.bashrc
     owner: fmi
     group: fmi
+
+- name: Source .bashrc
+  become_user: fmi
+  shell: . ~/.bashrc
+  changed_when: false
