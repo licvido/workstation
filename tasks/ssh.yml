@@ -1,0 +1,8 @@
+---
+
+- name: Generate an OpenSSH ED25519 keypair
+  become_user: fmi
+  openssh_keypair:
+    path: ~/.ssh/id_ed25519
+    type: ed25519
+    comment: "fmi@pop-os"
