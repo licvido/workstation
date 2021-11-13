@@ -11,6 +11,9 @@
       - neofetch
       - git
       - tig
+      - zip
+      - unzip
+      - curl
 
 - name: Uninstall packages
   package:
