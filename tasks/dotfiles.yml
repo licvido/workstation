@@ -1,0 +1,15 @@
+---
+
+- name: Copy custom .bash_aliases file
+  copy:
+    src: files/bash_aliases
+    dest: /home/fmi/.bash_aliases
+    owner: fmi
+    group: fmi
+
+- name: Copy custom .bashrc file
+  copy:
+    src: files/bashrc
+    dest: /home/fmi/.bashrc
+    owner: fmi
+    group: fmi

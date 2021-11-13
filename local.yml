@@ -14,3 +14,4 @@
     - include: tasks/packages.yml
     - include: tasks/software.yml
     - include: tasks/ssh.yml
+    - include: tasks/dotfiles.yml
