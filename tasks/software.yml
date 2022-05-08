@@ -1,7 +1,44 @@
 ---
 
+#
+# APT
+#
+
 - name: Install additional software
   package:
     state: present
     name:
       - flameshot
+
+- name: Uninstall additional software
+  package:
+    state: absent
+    name: []
+
+#
+# FLATPAK
+#
+
+#- name: Add the flathub flatpak repository remote to the user installation
+#  community.general.flatpak_remote:
+#    name: flathub
+#    state: present
+#    flatpakrepo_url: https://flathub.org/repo/flathub.flatpakrepo
+#    method: user
+#
+#- name: Install additional software via flatpak
+#  community.general.flatpak:
+#    state: present
+#    method: user
+#    name: "{{ item }}"
+#  loop:
+#    - 'io.dbeaver.DBeaverCommunity'
+#    - 'io.dbeaver.DBeaverCommunity.Client.mariadb'
+#    - 'com.jetbrains.PhpStorm'
+#
+#- name: Uninstall additional software via flatpak
+#  community.general.flatpak:
+#    state: absent
+#    method: user
+#    name: []
+
