@@ -32,9 +32,10 @@
 #    method: user
 #    name: "{{ item }}"
 #  loop:
-#    - 'io.dbeaver.DBeaverCommunity'
-#    - 'io.dbeaver.DBeaverCommunity.Client.mariadb'
-#    - 'com.jetbrains.PhpStorm'
+#    - io.dbeaver.DBeaverCommunity
+#    - io.dbeaver.DBeaverCommunity.Client.mariadb
+#    - com.jetbrains.PhpStorm
+#    - org.gnome.gitlab.somas.Apostrophe
 #
 #- name: Uninstall additional software via flatpak
 #  community.general.flatpak:
