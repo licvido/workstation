@@ -17,3 +17,5 @@
     - include: tasks/dotfiles.yml
     - include: tasks/users.yml
     - include: tasks/cronjobs.yml
+    - include: tasks/gnome.yml
+
