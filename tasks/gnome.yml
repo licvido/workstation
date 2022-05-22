@@ -38,3 +38,25 @@
     key: "/org/gnome/desktop/interface/clock-format"
     value: "'24h'"
 
+#
+# Wallpaper
+#
+
+- name: Copy wallpaper file
+  become_user: fmi
+  copy:
+    src: files/wallpapers/bliss-day-2560x1440.jpg
+    dest: /home/fmi/Pictures/bliss-day-2560x1440.jpg
+
+- name: Set wallpaper
+  become_user: fmi
+  dconf:
+    key: "/org/gnome/desktop/background/picture-uri"
+    value: "'file:///home/fmi/Pictures/bliss-day-2560x1440.jpg'"
+
+- name: Set wallpaper scale
+  become_user: fmi
+  dconf: 
+    key: "/org/gnome/desktop/background/picture-options"
+    value: "'fill'"
+
