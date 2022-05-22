@@ -19,6 +19,7 @@
       - python3-psutil # required by gnome tasks
       - gnome-tweaks
       - tree
+      - libnotify-bin # "alert" alias (notify-send)
 
 - name: Uninstall packages
   package:
