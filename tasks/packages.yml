@@ -17,6 +17,7 @@
       - curl
       - wget
       - python3-psutil # required by gnome tasks
+      - gnome-tweaks
 
 - name: Uninstall packages
   package:
