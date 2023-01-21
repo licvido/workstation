@@ -4,6 +4,7 @@
   package:
     state: present
     name:
+      - ca-certificates
       - curl
       - git
       - gitk
