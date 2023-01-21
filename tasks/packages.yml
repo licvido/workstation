@@ -4,23 +4,23 @@
   package:
     state: present
     name:
-      - mc
+      - curl
+      - git
+      - gitk
+      - gnome-tweaks
       - htop
-      - vim
+      - httpie
+      - libnotify-bin # "alert" alias (notify-send)
+      - mc
       - nano
       - neofetch
-      - git
-      - tig
-      - gitk
-      - zip
-      - unzip
-      - curl
-      - wget
       - python3-psutil # required by gnome tasks
-      - gnome-tweaks
+      - tig
       - tree
-      - libnotify-bin # "alert" alias (notify-send)
-      - httpie
+      - unzip
+      - vim
+      - wget
+      - zip
 
 - name: Uninstall packages
   package:
