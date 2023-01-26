@@ -1,6 +1,6 @@
 #!/bin/bash
 
-COMPOSER_VERSION="2.3.5"
+COMPOSER_VERSION="2.5.1"
 
 docker run --rm --interactive --tty \
   --volume $PWD:/app \
